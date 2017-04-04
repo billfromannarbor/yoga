@@ -1,6 +1,6 @@
-Copyright 2015 Karma Open Health LLC
+Copyright 2017 OtherKitten.com
 
-http://yoga.karmaopenhealth.org
+http://yoga.otherkitten.com - It's not actually deployed there though because I didn't do it.
 
 - The Yoga project is intended to be experimental in nature.  The project will change on a frequent basis without notice.
 - Testing of the code is done also on an experimental basis, so it is likely much of the code will not be fully tested. 
