@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">	
+		<title>RegEx Sandbox - YOGA</title>
+		<!-- Bootstrap Meta -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- End Bootstrap Meta -->
+		<!-- JQUERY -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- Bootstrap Libs and CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<!-- END Bootstrap Libs and CSS -->
+		<!-- RegEx Sandbox Specific -->
+		<link href="/css/regexsandbox.css" rel="stylesheet" type="text/css">
+		<script src="/js/regexsandbox.js"></script>
+		<!-- END TableFun Specific -->
+		<!-- YOGA Specific -->
+		<link href="/img/yogaIconFavIcon.png" rel="icon" type="image/png">
+		<script src="/js/initpage.js"></script>
+		<link href="/css/yoga.css" rel="stylesheet" type="text/css">
+		<!-- END YOGA Specific -->
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div id="navbar"></div>
+			<p class="yoga-plaintext lead">
+			Regex Sandbox 
+			</p>
+			<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp"
+				target="_blank">
+				Regular Expression Guide</a>
+		</div>
+		<!-- START Regex Editor -->
+		<!-- Icons on Buttons, Key Board Short Cuts, Popup Help -->
+		<div class="container-fluid">
+			<div id="json-file-panel" class="panel panel-primary">
+				<div class="panel-heading">
+						<h3 class="panel-title">JSON Editor</h3>
+				</div>
+				<div class="panel-body">
+					<div>
+						<button class="btn btn-default" type="button" id="regex-editor-validate">Validate</button>
+						<button class="btn btn-default" type="button" id="regex-editor-replace">Replace</button>
+					</div>
+					<label>Pattern:</label>
+					<textarea class="form-control" rows="1" id="regex-editor-pattern"></textarea>
+					<label>Flags(g,i,m):</label>
+					<textarea class="form-control" rows="1" id="regex-editor-flags"></textarea>
+					<label>Target String:</label>
+					<textarea class="form-control" rows="1" id="regex-editor-target-string"></textarea>
+					<label>Replace with String:</label>
+					<textarea class="form-control" rows="1" id="regex-editor-replace-with-string"></textarea>
+					<label>Result:</label>
+					<textarea class="form-control" rows="1" id="regex-editor-result"></textarea>
+					<div id="regex-editor-validation-errors" class="alert alert-success" role="alert"></div>
+				</div>
+			</div>
+		</div>		
+		<!-- END Regex Editor -->		
+		<div class="container-fluid">
+			<div id="footer"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,9 @@
+{
+	"preset": "crockford",
+	"validateIndentation": 2,
+	"requireMultipleVarDecl": null,
+	"disallowKeywordsOnNewLine": null,
+	"requireLineFeedAtFileEnd": null,
+	"disallowSemicolons": true
+}
+

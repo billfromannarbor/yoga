@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">	
+		<title>Geocode - YOGA</title>
+		<!-- Bootstrap Meta -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- End Bootstrap Meta -->
+		<!-- JQUERY -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- Bootstrap Libs and CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<!-- END Bootstrap Libs and CSS -->
+		<!--GeoCode-->
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.18"></script>
+		<script src="/js/filereading.js"></script>
+		<script src="/js/geocoding.js"></script>
+		<script src="/js/parsers-and-builders/csv-to-jsontable.js"></script>
+		<script src="/js/parsers-and-builders/json-to-jsontable.js"></script>
+		<script src="/js/parsers-and-builders/jsontable-to-json.js"></script>
+		<script src="/js/parsers-and-builders/jsontable-to-csv.js"></script>
+		<!--END GeoCode -->
+		<!-- YOGA Specific -->
+		<link rel="icon" type="image/png" href="/img/yogaIconFavIcon.png">
+		<script src="/js/initpage.js"></script>
+		<!-- END YOGA Specific -->
+</head>
+	<body>
+		<div id="navbar"></div>
+		<div class="container-fluid">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Open a Map Locations File</h3>
+				</div>
+				<div class="panel-body">
+					<a id="download-location-data" href="#">Download</a>
+					<input type="file" id="csv-file" accept="text/csv" 
+						onchange="displayLocationInfo('display-locations', this.files)">
+					<div id="display-locations" class="alert alert-success" role="alert"></div>
+				</div>
+			</div>
+		</div>
+			<!-- Download -->
+			<!-- Go through and GEO Code anything that is empty -->
+	</body>
+</html>

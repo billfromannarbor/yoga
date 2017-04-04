@@ -1,0 +1,22 @@
+{
+  "name": "parsers-and-builders",
+  "version": "1.0.0",
+  "description": "Parsers and Builders for converting JSON, CSV, HTML Tables into each other",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha index.js --harmony"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/KarmaOpenHealth/yoga"
+  },
+  "keywords": [
+    "JSON",
+    "CSV",
+    "HTML",
+    "Parser",
+    "Builder"
+  ],
+  "author": "Bill Heitzeg",
+  "license": "Apache-2.0"
+}

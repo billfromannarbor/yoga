@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">	
+		<title>File Fun - YOGA</title>
+		<!-- Bootstrap Meta -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- End Bootstrap Meta -->
+		<!-- JQUERY -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- Bootstrap Libs and CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<!-- END Bootstrap Libs and CSS -->
+		<!-- YOGA Specific -->
+		<link rel="icon" type="image/png" href="/img/yogaIconFavIcon.png">
+		<script src="/js/initpage.js"></script>
+		<link href="/css/yoga.css" rel="stylesheet" type="text/css">
+		<!-- END YOGA Specific -->
+		<!-- File Fun -->
+		<script src="/js/filereading.js"></script>
+		<!-- END File Fun -->
+	</head>
+	<body>
+		<div id="navbar"></div>
+		<div id="welcome" class="container-fluid">
+			<p class="yoga-plaintext lead">
+				Fun with Files
+			</p>
+		</div>
+		<div class="container-fluid">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Choose a file and display information about it</h3>
+				</div>
+				<div class="panel-body">
+					<input type="file" id="select-file-for-info" 
+						onchange="displayFileInfo('display-file-name-info', this.files)">
+					<div id="display-file-name-info" class="alert alert-success" role="alert"></div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Choose an image and display it</h3>
+				</div>
+				<div class="panel-body">
+					<input type="file"  accept="image/*" id="choose-an-image" 
+						onchange="displayImage('image-out', this.files)">
+					<div class="thumbnail">
+						<img src="/img/yogaIcon.png" id="image-out" class="img-responsive" alt="Your Image">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Open a CSV File</h3>
+				</div>
+				<div class="panel-body">
+					<input type="file" id="csv-file" accept="text/csv" 
+						onchange="displayCSVInfo('display-CSV-Info', this.files)">
+					<div id="display-CSV-Info" class="alert alert-success" role="alert"></div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Open a JSON File</h3>
+				</div>
+				<div class="panel-body">
+					<input type="file" id="json-file" accept="application/json" 
+						onchange="displayJSONInfo('display-JSON-Info', this.files)">
+					<div id="display-JSON-Info" class="alert alert-success" role="alert"></div>
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>

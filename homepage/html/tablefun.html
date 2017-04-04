@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">	
+		<title>Table Fun - YOGA</title>
+		<!-- Bootstrap Meta -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- End Bootstrap Meta -->
+		<!-- JQUERY -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- Bootstrap Libs and CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<!-- END Bootstrap Libs and CSS -->
+		<!-- TableFun Specific -->
+		<link rel="stylesheet" type="text/css" href="/css/tablefun.css">
+		<script src="/js/tablefun.js"></script>
+		<script src="/js/parsers-and-builders/csv-to-jsontable.js"></script>
+		<script src="/js/parsers-and-builders/json-to-jsontable.js"></script>
+		<script src="/js/parsers-and-builders/jsontable-to-json.js"></script>
+		<script src="/js/parsers-and-builders/jsontable-to-csv.js"></script>
+		<!-- YOGA Specific -->
+		<link rel="icon" type="image/png" href="/img/yogaIconFavIcon.png">
+		<script src="/js/initpage.js"></script>
+		<!-- END YOGA Specific -->
+	</head>
+	<body>
+		<div id="navbar"></div>
+		<!-- JSON Editor -->
+		<!-- Icons on Buttons, Key Board Short Cuts, Popup Help -->
+		<div class="container-fluid">
+			<div id="json-file-panel" class="panel panel-primary">
+				<div class="panel-heading">
+						<h3 class="panel-title">JSON Editor</h3>
+				</div>
+				<div class="panel-body">
+					<div id="json-editor-navigator">
+						<input type="file" id="json-editor-file-picker" accept="application/json" style="display:none" 
+							onchange="filePicker('json-editor-filePath', 'json-editor-text', this.files)">
+						<button class="btn btn-default" type="button" id="json-editor-validate">Validate</button>
+						<button class="btn btn-default" type="button" id="json-editor-upload">Upload</button>
+						<a id="json-editor-download" class="btn btn-default" href="#">Download</a>
+						<button class="btn btn-default" type="button" id="json-editor-convert-csv">Convert to CSV</button>
+						<button class="btn btn-default" type="button" id="json-editor-convert-html">Convert to HTMl Table</button>
+						<div id="json-editor-filePath"></div>
+					</div>
+					<textarea class="form-control" rows="3" id="json-editor-text"></textarea>
+					<div id="json-editor-validation-errors" class="alert alert-success" role="alert"></div>
+				</div>
+			</div>
+		</div>
+		<!-- END JSON Editor -->
+		<!-- CSV Editor -->
+		<!-- Icons on Buttons, Key Board Short Cuts, Popup Help -->
+		<div class="container-fluid">
+			<div id="csv-file-panel" class="panel panel-primary">
+				<div class="panel-heading">
+						<h3 class="panel-title">CSV Editor</h3>
+				</div>
+				<div class="panel-body">
+					<div id="csv-editor-navigator">
+						<input type="file" id="csv-editor-file-picker" accept="text/csv" style="display:none" 
+							onchange="filePicker('csv-editor-filePath', 'csv-editor-text', this.files)">
+						<button class="btn btn-default" type="button" id="csv-editor-validate">Validate</button>
+						<button class="btn btn-default" type="button" id="csv-editor-upload">Upload</button>
+						<a id="csv-editor-download" class="btn btn-default" href="#">Download</a>
+						<button class="btn btn-default" type="button" id="csv-editor-convert-csv">Convert to JSON</button>
+						<button class="btn btn-default" type="button" id="csv-editor-convert-html">Convert to HTMl Table</button>
+						<label>Header Rows:</label>
+						<select id="csv-editor-number-of-header-rows">
+  						<option value="0">0</option> 
+  						<option value="1">1</option> 
+  						<option value="2" selected>2</option> 
+  						<option value="3">3</option> 
+  						<option value="4">4</option> 
+  						<option value="5">5</option> 
+						</select>
+						<div id="csv-editor-filePath"></div>
+					</div>
+					<textarea class="form-control" rows="3" id="csv-editor-text"></textarea>
+					<div id="csv-editor-validation-errors" class="alert alert-success" role="alert"></div>
+				</div>
+			</div>
+		</div>
+		<!-- END CSV Editor -->
+		<div id="footer"></div>
+	</body>
+</html>

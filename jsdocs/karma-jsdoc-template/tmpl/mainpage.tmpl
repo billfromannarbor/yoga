@@ -1,0 +1,23 @@
+<?js
+var data = obj;
+var self = this;
+?>
+
+<?js if (data.kind === 'package') { ?>
+    <h3><?js= data.name ?> <?js= data.version ?></h3>
+	<div>
+		<p class="yoga-plaintext lead">
+			Documentation for the javascript libraries used in Yoga
+		</p>
+		<p class="yoga-plaintext medium">
+			As with all of Yoga, no guarantee is made that the docs will be up-to-date, relevant or useful
+		</p>
+		<img src="/img/yogausingrestroomlikeimage.png" alt="Yoga Docs">
+	</div>    
+<?js } ?>
+
+<?js if (data.readme) { ?>
+    <section>
+        <article><?js= data.readme ?></article>
+    </section>
+<?js } ?>

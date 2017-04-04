@@ -1,0 +1,1 @@
+aws s3 sync . s3://yoga.karmaopenhealth.org --exclude "test/*.*" --exclude push.sh --exclude contributors.txt --exclude startserver.sh --exclude *.DS_Store --exclude *.pxm

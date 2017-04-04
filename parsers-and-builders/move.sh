@@ -1,0 +1,1 @@
+cp *.js ../homepage/js/parsers-and-builders/

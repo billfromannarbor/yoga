@@ -1,0 +1,5 @@
+{ "useLocal":true,
+	"localHomePage":"http://localhost:7000", 
+	"homePage":"http://yoga.karmaopenhealth.org",
+	"timeout":20000
+}

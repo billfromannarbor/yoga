@@ -1,0 +1,19 @@
+{
+  "name": "yoga-rest",
+  "version": "1.0.0",
+  "description": "A simple REST service using Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/KarmaOpenHealth/yoga"
+  },
+  "author": "Bill Heitzeg",
+  "license": "Apache 2",
+  "dependencies": {
+    "express": "^4.12.3"
+  },
+  "devDependencies": {}
+}

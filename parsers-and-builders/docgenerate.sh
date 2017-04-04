@@ -1,0 +1,1 @@
+jsdoc -d ../homepage/apidocs . -t ../jsdocs/karma-jsdoc-template/
