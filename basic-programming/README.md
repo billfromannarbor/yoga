@@ -1,8 +1,9 @@
 # Basic Programming Examples Using Java script
-Recursion [recursion.js] (./recursion.js) - countdown calls it's self until the number passed is less than 1
-Variables [variables.js] (./variables.js) - Hoisting (let and const aren't, but var and functions are) and Strictly Equals (checks for type as well)
-Sorting [sorting.js] (./sorting.js) - Uses a function to modify the standard sort
-Arrow Functions [arrowfunctions.js] (./arrowfunctions.js) - Uses array.map to demonstrate how to replace a simple function with an arrow function.
+- Recursion [recursion.js](./recursion.js) - countdown calls it's self until the number passed is less than 1
+- Variables [variables.js](./variables.js) - Hoisting (let and const aren't, but var and functions are) and Strictly Equals (checks for type as well)
+- Sorting [sorting.js](./sorting.js) - Uses a function to modify the standard sort
+- Arrow Functions[arrowfunctions.js] (./arrowfunctions.js) - Uses array.map to demonstrate how to replace a simple function with an arrow function.
+- Map and Reduce [mapreduce.js](./mapreduce.js) - Map returns an array based on transforming each element of the array - Reduce - returns a single value representing analysis/tranformation of the entire array
 
 
 # Asperations
