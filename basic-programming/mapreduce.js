@@ -1,3 +1,9 @@
+let studentNames = ["Daniel", "Jane", ,"Joe"];
+
+let names = [...studentNames]; //Makes a copy and removes empty elements
+
+console.log(names); // ["Daniel","Jane","Joe"]
+
 let pets = ["dog","cat", "hamster", "goldfish", "parrot"];
 
 function wearAleash(pet) {
